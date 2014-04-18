@@ -13,7 +13,7 @@ global $tpl;
 	<article id="resource-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header>
       <hgroup>
-        <h2><?php the_title(); ?></h2>
+        <h2><a href="<? the_permalink(); ?>"><?php the_title(); ?></a></h2>
         <h5>Contributed by: <?php the_author(); ?></h5>
       </hgroup>
 		</header>
