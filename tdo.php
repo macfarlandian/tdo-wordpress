@@ -147,22 +147,32 @@ function tdo_resources(){
   );
 
   $args = array(
-    'labels'		=> $labels,
-    'public'		=> true,
+    'labels'	 	=> $labels,
+    'public'	 	=> false,
+    'publicly_queryable' => true,
     'show_ui'		=> true,
-    'supports'		=> $supports,
-    'taxonomies'	=> $taxonomies,
+    'supports'   	=> $supports,
+    'taxonomies'	 => $taxonomies,
     'has_archive'	=> true,
-    'rewrite'		=> $rewrite
+    'rewrite'		=> $rewrite,
+    'map_meta_cap'   => true,
   );
 
   register_post_type( 'tdo_resource', $args );
+}
+
+function force_type_private($post)
+{
+    if ($post['post_type'] == 'tdo_resource')
+    $post['post_status'] = 'private';
+    return $post;
 }
 
 function tdo_activate(){
   tdo_taxonomy();
   include_once('chapters.php');
   tdo_chapters($chapters);
+  flush_rewrite_rules(false);
 }
 
 function tdo_init() {
@@ -313,6 +323,7 @@ register_activation_hook(__FILE__, 'tdo_activate');
 */
 
 add_filter( 'template_include', 'tdo_template_chooser');
+add_filter('wp_insert_post_data', 'force_type_private');
 
 /*
 |--------------------------------------------------------------------------
