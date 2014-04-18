@@ -20,8 +20,8 @@ jQuery(document).ready(function($){
     }
   });
 
+  // search function
   var to = false;
-
   $('#chaptersearch').keyup(function () {
     if(to) { clearTimeout(to); }
     to = setTimeout(function () {
@@ -29,4 +29,19 @@ jQuery(document).ready(function($){
       $('#chapters').jstree(true).search(v);
     }, 250);
   });
+
+  // link function
+  $('#chapters').on('activate_node.jstree', function(e,t){
+    window.location.href = t.node.a_attr.href;
+  });
+
+  // active node function
+  // get url path, split it, remove empty items from array
+  /* var path = window.location.pathname.split('/').filter(function(v,i,a){
+    return v != '';
+  });
+  if (path[path.length - 2] == 'chapters') { // second to last
+    var chap = path[path.length - 1].replace(/-/g, '.');
+    $('#chapters').jstree(true).search(chap);
+  }*/
 });

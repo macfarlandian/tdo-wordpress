@@ -87,7 +87,7 @@ function tdo_taxonomy(){
     'show_ui'           => true,
     'show_admin_column' => true,
     'query_var'         => true,
-    'rewrite'           => array( 'slug' => 'chapters' ),
+    'rewrite'           => array( 'slug' => 'resources/chapters' ),
   );
   // $types = array('post', 'page', 'attachment');
   $types = 'tdo_resource';
@@ -106,7 +106,7 @@ function tdo_taxonomy(){
       'show_ui'           => true,
       'show_admin_column' => true,
       'query_var'         => true,
-      'rewrite'           => array( 'slug' => 'resource_types' ),
+      'rewrite'           => array( 'slug' => 'resources/types' ),
     );
   register_taxonomy( 'resource_types', $types, $typeargs );
 }
@@ -249,7 +249,7 @@ function tdo_scripts() {
  */
 function chapterbox(){
   ?>
-  <aside  id="gk-sidebar">
+  <aside id="gk-sidebar">
     <div class="box">
       <div>
         <h3 class="box-title">Chapters</h3>

@@ -1,4 +1,7 @@
 nav#chapters {
   height: 350px;
-  overflow-y: auto;
+  overflow-y: scroll;
+}
+input#chaptersearch {
+  width: 100%;
 }
