@@ -148,7 +148,7 @@ function tdo_resources(){
 
   $args = array(
     'labels'	 	=> $labels,
-    'public'	 	=> false,
+    'public'	 	=> true,
     'publicly_queryable' => true,
     'show_ui'		=> true,
     'supports'   	=> $supports,
@@ -267,7 +267,7 @@ function chapterbox(){
         <!-- chapter browser -->
         <nav id="chapters">
           <ul id="chapterlist">
-          <? wp_list_categories('taxonomy=chapters&hide_empty=0&title_li='); ?>
+          <? wp_list_categories('taxonomy=chapters&hide_empty=0&orderby=ID&title_li='); ?>
           </ul>
         </nav>
       </div>
@@ -287,25 +287,36 @@ function chapterbox(){
   <?php
 }
 
+function remove_private_prefix($title) {
+    $title = str_replace('Private:','',$title);
+    return $title;
+}
 
-// $thesecats = get_categories('taxonomy=chapters&hide_empty=0');
-// // build a multidim array out of this result
-//
-// // make a recursive function
-// function multitax($in, $level=0) {
-//   // take flat input, return nested output
-//   $out = array();
-//   foreach ($in as $item) {
-//     // one level at a time - recursion handles depth
-//     if ($item->parent == $level){
-//       // each term is an array: 0 is object, 1 is children
-//       $out[] = array($item, multitax())
-//     }
-//   }
-//   return $out;
-// }
-// // print_r($thesecats);
+function chapter_children($query) {
+    $tax = $query->tax_query->queries[0]['taxonomy'];
+    $term = $query->get('term');
+    // var_dump($query->tax_query->queries[0]['taxonomy']);
+    if ($tax == 'chapters') {
+        $tax_query = array(
+            array(
+                'taxonomy'=>$tax,
+                'field'=>'slug',
+                'terms'=>$term,
+                'include_children'=>true,
+                'operator'=>'IN'
+            )
+        );
+        // $query->set('tax_query', $tax_query);
+    }
+    // var_dump($query->get('tax_query'));
 
+    // var_dump($wp_query->get('taxonomy'));
+    // $oldq = $wp_query->get('tax_query');
+    // $rel = array('relation'=>'OR');
+    // $newq = array_merge($oldq, $rel);
+    // $wp_query->set('tax_query', $newq);
+    // var_dump($wp_query->query_vars);
+}
 
 /*
 |--------------------------------------------------------------------------
@@ -324,6 +335,7 @@ register_activation_hook(__FILE__, 'tdo_activate');
 
 add_filter( 'template_include', 'tdo_template_chooser');
 add_filter('wp_insert_post_data', 'force_type_private');
+add_filter('the_title','remove_private_prefix');
 
 /*
 |--------------------------------------------------------------------------
@@ -335,3 +347,4 @@ add_action( 'init', 'tdo_init');
 add_action('wp_enqueue_scripts', 'tdo_styles');
 add_action('wp_enqueue_scripts', 'tdo_scripts');
 add_action('gavernwp_before_column', 'chapterbox');
+add_action('pre_get_posts', 'chapter_children');

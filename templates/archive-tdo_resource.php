@@ -12,9 +12,8 @@ gk_load('header');
 gk_load('before');
 
 ?>
-
 <section id="gk-mainbody">
-	<h1 class="page-title">Resources</h1>
+    <h1>Resources</h1>
 
 	<?php if ( have_posts() ) : ?>
 		<?php do_action('gavernwp_before_loop'); ?>
