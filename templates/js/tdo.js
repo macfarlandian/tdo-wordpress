@@ -1,11 +1,20 @@
-// chapter filter
-//
-// jQuery(document).ready(function($){
-//   $('#chaptersearch').fastLiveFilter('#chapterlist');
-// })
-
-// collapsible tree
 jQuery(document).ready(function($){
+
+//*******************************
+// show titles in category list
+$('#chapterlist li').each(function(i){
+    var link = $(this).children('a');
+    var t = link.attr('title');
+    var c = link.text();
+    // console.log(t, c);
+    link.text(c + ': ' + t);
+});
+
+
+//****************************************
+// JSTree functions
+// collapsible tree
+
   $('#chapters').jstree({
     "plugins": ['search'],
     "search": {
