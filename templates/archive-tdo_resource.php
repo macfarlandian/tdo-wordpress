@@ -13,7 +13,18 @@ gk_load('before');
 
 ?>
 <section id="gk-mainbody">
-    <h1>Resources</h1>
+    <h1>Resources<?php
+        if (is_tax()){
+            echo ": ";
+            $term = $wp_query->get('term');
+            $tax = $wp_query->get('taxonomy');
+            if ($tax == 'resource_types') {
+                echo str_replace('-', ' ', $term);
+            } else if ($tax == 'chapters') {
+                echo 'Chapter ' . str_replace('-', '.', $term);
+            }
+    }
+    ?></h1>
 
 	<?php if ( have_posts() ) : ?>
 		<?php do_action('gavernwp_before_loop'); ?>

@@ -255,7 +255,7 @@ function chapterbox(){
   <aside id="gk-sidebar">
     <div class="box">
       <div>
-        <h3 class="box-title">Chapters</h3>
+        <h3 class="box-title">Resources by TDO chapter</h3>
         <input id="chaptersearch" />
         <!-- chapter browser -->
         <nav id="chapters">
@@ -267,7 +267,7 @@ function chapterbox(){
     </div>
     <div class="box">
       <div>
-        <h3 class="box-title">Resource types</h3>
+        <h3 class="box-title">Resources by type</h3>
         <!-- type browser -->
         <nav class="resource_types">
           <ul id="typelist">
