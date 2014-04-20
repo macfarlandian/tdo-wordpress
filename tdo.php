@@ -25,14 +25,6 @@
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-define( 'WP_DEBUG', true );
-
-
-
-// TO DO:
-// front end: faceted browsing. find by chapter, type
-
-// apply custom template for resources from this plugin
 /*
 |--------------------------------------------------------------------------
 | CONSTANTS
@@ -306,29 +298,31 @@ function private_by_default() {
 }
 
 function chapter_children($query) {
-    $tax = $query->tax_query->queries[0]['taxonomy'];
-    $term = $query->get('term');
-    // var_dump($query->tax_query->queries[0]['taxonomy']);
-    if ($tax == 'chapters') {
-        $tax_query = array(
-            array(
-                'taxonomy'=>$tax,
-                'field'=>'slug',
-                'terms'=>$term,
-                'include_children'=>true,
-                'operator'=>'IN'
-            )
-        );
-        // $query->set('tax_query', $tax_query);
+    $term = $query->get('chapters');
+    if ($term) {
+        $chapter = term_exists($term, 'chapters');
+        // $kids = get_term_children(, 'chapters');
+        // var_dump($kids);
     }
-    // var_dump($query->get('tax_query'));
 
-    // var_dump($wp_query->get('taxonomy'));
-    // $oldq = $wp_query->get('tax_query');
-    // $rel = array('relation'=>'OR');
-    // $newq = array_merge($oldq, $rel);
-    // $wp_query->set('tax_query', $newq);
-    // var_dump($wp_query->query_vars);
+
+}
+
+// Add CSS classes to body
+function tdo_body_classes($classes) {
+	if ( is_post_type_archive('tdo_resource') ) {
+        $classes[] = 'tdo-resources';
+    }
+    if ( is_tax('chapters') ){
+        $classes[] = 'tdo-resources';
+        $classes[] = 'tdo-chapters';
+    }
+    if ( is_tax('resource_types') ){
+        $classes[] = 'tdo-resources';
+        $classes[] = 'tdo-resource-types';
+    }
+	// return the $classes array
+	return $classes;
 }
 
 /*
@@ -348,6 +342,7 @@ register_activation_hook(__FILE__, 'tdo_activate');
 
 add_filter( 'template_include', 'tdo_template_chooser');
 add_filter('the_title','remove_private_prefix');
+add_filter('body_class','tdo_body_classes');
 
 /*
 |--------------------------------------------------------------------------
@@ -359,5 +354,5 @@ add_action( 'init', 'tdo_init');
 add_action('wp_enqueue_scripts', 'tdo_styles');
 add_action('wp_enqueue_scripts', 'tdo_scripts');
 add_action('gavernwp_before_column', 'chapterbox');
-add_action('pre_get_posts', 'chapter_children');
+// add_action('pre_get_posts', 'chapter_children');
 add_action('post_submitbox_misc_actions', 'private_by_default');
