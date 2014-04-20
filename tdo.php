@@ -161,13 +161,6 @@ function tdo_resources(){
   register_post_type( 'tdo_resource', $args );
 }
 
-function force_type_private($post)
-{
-    if ($post['post_type'] == 'tdo_resource')
-    $post['post_status'] = 'private';
-    return $post;
-}
-
 function tdo_activate(){
   tdo_taxonomy();
   include_once('chapters.php');
@@ -292,6 +285,24 @@ function remove_private_prefix($title) {
     return $title;
 }
 
+function private_by_default() {
+    global $post;
+    if ($post->post_type != 'tdo_resource') return;
+    $visibility = 'private';
+    $visibility_trans = __('Private');
+    ?>
+    <script type="text/javascript">
+        (function($){
+            try {
+                $('#post-visibility-display').text('<?php echo $visibility_trans; ?>');
+                $('#hidden-post-visibility').val('<?php echo $visibility; ?>');
+                $('#visibility-radio-<?php echo $visibility; ?>').attr('checked', true);
+            } catch(err){}
+        }) (jQuery);
+    </script>
+    <?php
+}
+
 function chapter_children($query) {
     $tax = $query->tax_query->queries[0]['taxonomy'];
     $term = $query->get('term');
@@ -334,7 +345,6 @@ register_activation_hook(__FILE__, 'tdo_activate');
 */
 
 add_filter( 'template_include', 'tdo_template_chooser');
-add_filter('wp_insert_post_data', 'force_type_private');
 add_filter('the_title','remove_private_prefix');
 
 /*
@@ -348,3 +358,4 @@ add_action('wp_enqueue_scripts', 'tdo_styles');
 add_action('wp_enqueue_scripts', 'tdo_scripts');
 add_action('gavernwp_before_column', 'chapterbox');
 add_action('pre_get_posts', 'chapter_children');
+add_action('post_submitbox_misc_actions', 'private_by_default');
