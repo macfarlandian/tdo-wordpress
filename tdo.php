@@ -251,12 +251,13 @@ function tdo_scripts() {
  *
  */
 function chapterbox(){
+    if(is_post_type_archive('tdo_resource') || is_tax('chapters') || is_tax('resource_types') ):
   ?>
   <aside id="gk-sidebar">
     <div class="box">
       <div>
         <h3 class="box-title">Resources by TDO chapter</h3>
-        <input id="chaptersearch" />
+        <input id="chaptersearch" placeholder="Search chapters"/>
         <!-- chapter browser -->
         <nav id="chapters">
           <ul id="chapterlist">
@@ -278,6 +279,7 @@ function chapterbox(){
     </div>
   </aside>
   <?php
+  endif;
 }
 
 function remove_private_prefix($title) {

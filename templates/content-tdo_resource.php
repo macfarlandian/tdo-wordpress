@@ -14,12 +14,12 @@ global $tpl;
     <header>
       <hgroup>
         <h2><a href="<? the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <h5>Contributed by: <?php the_author(); ?></h5>
+        <h3>Contributed by: <?php the_author(); ?></h5>
       </hgroup>
 		</header>
     <section class="metacrap">
-      <div><? the_terms(get_the_ID(), 'resource_types', 'Resource type: ') ?></div>
-      <div><? the_terms(get_the_ID(), 'chapters', 'Related chapters: ') ?></div>
+      <h5><? the_terms(get_the_ID(), 'resource_types', 'Resource type: ') ?></h5>
+      <h5><? the_terms(get_the_ID(), 'chapters', 'Related chapters: ') ?></h5>
     </section>
 
 		<section class="content">

@@ -1,7 +1,19 @@
+body.tdo-resources h1,
+body.tdo-resources h2,
+body.tdo-resources h3,
+body.tdo-resources h4,
+body.tdo-resources h5,
+body.tdo-resources h6 {
+  line-height: 1.3;
+  margin: auto;
+}
 nav#chapters {
   height: 350px;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+nav#chapters .jstree-children .jstree-node {
+  margin-left: 0;
 }
 input#chaptersearch {
   width: 100%;
