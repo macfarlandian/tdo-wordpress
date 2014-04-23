@@ -355,4 +355,4 @@ add_action('wp_enqueue_scripts', 'tdo_styles');
 add_action('wp_enqueue_scripts', 'tdo_scripts');
 add_action('gavernwp_before_column', 'chapterbox');
 // add_action('pre_get_posts', 'chapter_children');
-add_action('post_submitbox_misc_actions', 'private_by_default');
+// add_action('post_submitbox_misc_actions', 'private_by_default');
