@@ -76,7 +76,7 @@ function tdo_taxonomy(){
     'new_item'          => __( 'New Chapter'),
     'edit_item'         => __( 'Edit Chapter'),
     'view_item'         => __( 'View Chapter'),
-    'all_items'         => __( 'All Chapter'),
+    'all_items'         => __( 'All Chapters'),
     'search_items'      => __( 'Search Chapters'),
     'parent_item_colon' => __( 'Parent Chapters:'),
     'not_found'         => __( 'No chapters found.'),
