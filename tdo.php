@@ -72,6 +72,15 @@ function tdo_taxonomy(){
   $chapterlabels = array(
     'name' => _x( 'Chapters', 'taxonomy general name' ),
     'singular_name' => _x( 'Chapter', 'taxonomy singular name' ),
+    'add_new_item'		=> __( 'Add New Chapter'),
+    'new_item'          => __( 'New Chapter'),
+    'edit_item'         => __( 'Edit Chapter'),
+    'view_item'         => __( 'View Chapter'),
+    'all_items'         => __( 'All Chapter'),
+    'search_items'      => __( 'Search Chapters'),
+    'parent_item_colon' => __( 'Parent Chapters:'),
+    'not_found'         => __( 'No chapters found.'),
+    'not_found_in_trash'=> __( 'No chapters found in Trash.')
   );
   $chapterargs = array(
     'hierarchical'      => true,
@@ -90,6 +99,15 @@ function tdo_taxonomy(){
   $typelabels = array(
     'name' => _x( 'Resource Types', 'taxonomy general name' ),
     'singular_name' => _x( 'Resource Type', 'taxonomy singular name' ),
+    'add_new_item'		=> __( 'Add New Resource Type'),
+    'new_item'          => __( 'New Resource Type'),
+    'edit_item'         => __( 'Edit Resource Type'),
+    'view_item'         => __( 'View Resource Type'),
+    'all_items'         => __( 'All Resource Types'),
+    'search_items'      => __( 'Search Resource Types'),
+    'parent_item_colon' => __( 'Parent Resource Types:'),
+    'not_found'         => __( 'No resource types found.'),
+    'not_found_in_trash'=> __( 'No resource types found in Trash.')
   );
 
   $typeargs = array(
