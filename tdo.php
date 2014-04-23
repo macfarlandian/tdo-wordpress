@@ -93,7 +93,7 @@ function tdo_taxonomy(){
   );
 
   $typeargs = array(
-      'hierarchical'      => false,
+      'hierarchical'      => true,
       'labels'            => $typelabels,
       'show_ui'           => true,
       'show_admin_column' => true,
