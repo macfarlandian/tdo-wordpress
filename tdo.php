@@ -261,9 +261,9 @@ function tdo_scripts() {
  *
  */
 function chapterbox(){
-    if(is_post_type_archive('tdo_resource') || is_tax('chapters') || is_tax('resource_types') ):
+    if(is_post_type_archive('tdo_resource') || is_singular('tdo_resource')
+        || is_tax('chapters') || is_tax('resource_types') ):
   ?>
-  <aside id="gk-sidebar">
     <div class="box">
       <div>
         <h3 class="box-title">Resources by TDO chapter</h3>
@@ -287,7 +287,6 @@ function chapterbox(){
         </nav>
       </div>
     </div>
-  </aside>
   <?php
   endif;
 }
@@ -343,6 +342,12 @@ function tdo_body_classes($classes) {
 	return $classes;
 }
 
+// create our own action to hook sidebar into
+function tdo_sidebar(){
+    do_action('tdo_sidebar');
+}
+
+
 /*
 |--------------------------------------------------------------------------
 | ACTIVATION HOOKS
@@ -371,6 +376,6 @@ add_filter('body_class','tdo_body_classes');
 add_action( 'init', 'tdo_init');
 add_action('wp_enqueue_scripts', 'tdo_styles');
 add_action('wp_enqueue_scripts', 'tdo_scripts');
-add_action('gavernwp_before_column', 'chapterbox');
+add_action('tdo_sidebar', 'chapterbox');
 // add_action('pre_get_posts', 'chapter_children');
 // add_action('post_submitbox_misc_actions', 'private_by_default');

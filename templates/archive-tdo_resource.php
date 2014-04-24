@@ -27,7 +27,6 @@ gk_load('before');
     ?></h1>
 
 	<?php if ( have_posts() ) : ?>
-		<?php do_action('gavernwp_before_loop'); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php include(tdo_get_template_hierarchy( 'content-tdo_resource' )); ?>
@@ -35,7 +34,6 @@ gk_load('before');
 
 		<?php gk_content_nav(); ?>
 
-		<?php do_action('gavernwp_after_loop'); ?>
 	<?php else : ?>
 
 		<h1 class="entry-title"><?php _e( 'Nothing Found', GKTPLNAME ); ?></h1>
@@ -48,7 +46,8 @@ gk_load('before');
 </section>
 
 <?php
-gk_load('after');
+include_once('after-tdo_resource.php');
+// gk_load('after');
 gk_load('footer');
 
 // EOF

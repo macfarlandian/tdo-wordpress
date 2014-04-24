@@ -1,40 +1,32 @@
 <?php
+
 /**
- * The Template for displaying all single posts
  *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
- */
+ * Single page
+ *
+ **/
 
-get_header(); ?>
+global $tpl;
 
-	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
-			<?php
-				// Start the Loop.
-				while ( have_posts() ) : the_post();
+gk_load('header');
+gk_load('before');
 
-					/*
-					 * Include the post format-specific template for the content. If you want to
-					 * use this in a child theme, then include a file called called content-___.php
-					 * (where ___ is the post format) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
+?>
 
-					// Previous/next post navigation.
-					twentyfourteen_post_nav();
+<section id="gk-mainbody">
+	<?php while ( have_posts() ) : the_post(); ?>
+		<?php gk_content_nav(); ?>
 
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
-				endwhile;
-			?>
-		</div><!-- #content -->
-	</div><!-- #primary -->
+		<?php include(tdo_get_template_hierarchy( 'content-tdo_resource' )); ?>
+
+		<?php comments_template( '', true ); ?>
+	<?php endwhile; // end of the loop. ?>
+</section>
 
 <?php
-get_sidebar( 'content' );
-get_sidebar();
-get_footer();
+
+include_once('after-tdo_resource.php');
+// gk_load('after');
+gk_load('footer');
+
+// EOF
