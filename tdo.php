@@ -164,9 +164,10 @@ function tdo_resources(){
     'show_ui'		=> true,
     'supports'   	=> $supports,
     'taxonomies'	 => $taxonomies,
-    'has_archive'	=> true,
+    'has_archive'	=> false,
     'rewrite'		=> $rewrite,
     'map_meta_cap'   => true,
+    'exclude_from_search' => true,
   );
 
   register_post_type( 'tdo_resource', $args );
@@ -204,7 +205,6 @@ function tdo_template_chooser( $template ) {
     } else if ( is_single() ) {
         return tdo_get_template_hierarchy( 'single-tdo_resource' );
     }
-
 }
 
 /**
@@ -262,8 +262,6 @@ function tdo_scripts() {
  *
  */
 function chapterbox(){
-    if(is_post_type_archive('tdo_resource') || is_singular('tdo_resource')
-        || is_tax('chapters') || is_tax('resource_types') ):
   ?>
     <div class="box">
       <div>
@@ -289,7 +287,6 @@ function chapterbox(){
       </div>
     </div>
   <?php
-  endif;
 }
 
 function remove_private_prefix($title) {
@@ -355,6 +352,129 @@ function tdo_new_excerpt_more( $more ) {
         . '</a>]';
 }
 
+
+/*
+|--------------------------------------------------------------------------
+| PAGE TEMPLATING CLASS
+| via http://www.wpexplorer.com/wordpress-page-templates-plugin/
+|--------------------------------------------------------------------------
+*/
+
+class PageTemplater {
+
+		/**
+         * A Unique Identifier
+         */
+		 protected $plugin_slug;
+
+        /**
+         * A reference to an instance of this class.
+         */
+        private static $instance;
+
+        /**
+         * The array of templates that this plugin tracks.
+         */
+        protected $templates;
+
+        /**
+         * Returns an instance of this class.
+         */
+        public static function get_instance() {
+            if( null == self::$instance ) {
+                self::$instance = new PageTemplater();
+            }
+            return self::$instance;
+        }
+
+        /**
+         * Initializes the plugin by setting filters and administration functions.
+         */
+        private function __construct() {
+            $this->templates = array();
+
+            // Add a filter to the attributes metabox to inject template into the cache.
+            add_filter(
+				'page_attributes_dropdown_pages_args',
+				 array( $this, 'register_project_templates' )
+			);
+
+            // Add a filter to the save post to inject out template into the page cache
+            add_filter(
+				'wp_insert_post_data',
+				array( $this, 'register_project_templates' )
+			);
+
+            // Add a filter to the template include to determine if the page has our
+			// template assigned and return it's path
+            add_filter(
+				'template_include',
+				array( $this, 'view_project_template')
+			);
+
+            // Add your templates to this array.
+            $this->templates = array(
+                'templates/landing-tdo_resource.php'     => 'TDO Resources Landing Page',
+            );
+        }
+
+        /**
+         * Adds our template to the pages cache in order to trick WordPress
+         * into thinking the template file exists where it doens't really exist.
+         *
+         */
+
+        public function register_project_templates( $atts ) {
+            // Create the key used for the themes cache
+            $cache_key = 'page_templates-' . md5( get_theme_root() . '/' . get_stylesheet() );
+
+            // Retrieve the cache list.
+    		// If it doesn't exist, or it's empty prepare an array
+            $templates = wp_get_theme()->get_page_templates();
+            if ( empty( $templates ) ) {
+                $templates = array();
+            }
+
+            // New cache, therefore remove the old one
+            wp_cache_delete( $cache_key , 'themes');
+
+            // Now add our template to the list of templates by merging our templates
+            // with the existing templates array from the cache.
+            $templates = array_merge( $templates, $this->templates );
+
+            // Add the modified cache to allow WordPress to pick it up for listing
+            // available templates
+            wp_cache_add( $cache_key, $templates, 'themes', 1800 );
+
+            return $atts;
+        }
+
+        /**
+         * Checks if the template is assigned to the page
+         */
+        public function view_project_template( $template ) {
+            global $post;
+
+            if (!isset($this->templates[get_post_meta(
+				$post->ID, '_wp_page_template', true
+			)] ) ) {
+                return $template;
+            }
+
+            $file = plugin_dir_path(__FILE__). get_post_meta(
+				$post->ID, '_wp_page_template', true
+			);
+
+            // Just to be safe, we check if the file exist first
+            if( file_exists( $file ) ) {
+                    return $file;
+            }
+			else { echo $file; }
+
+            return $template;
+        }
+}
+
 /*
 |--------------------------------------------------------------------------
 | ACTIVATION HOOKS
@@ -385,5 +505,6 @@ add_action( 'init', 'tdo_init');
 add_action('wp_enqueue_scripts', 'tdo_styles');
 add_action('wp_enqueue_scripts', 'tdo_scripts');
 add_action('tdo_sidebar', 'chapterbox');
+add_action( 'plugins_loaded', array( 'PageTemplater', 'get_instance' ) );
 // add_action('pre_get_posts', 'chapter_children');
 // add_action('post_submitbox_misc_actions', 'private_by_default');
