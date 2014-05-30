@@ -25,7 +25,13 @@ global $tpl;
     </section>
 
 		<section class="content">
-			<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', GKTPLNAME ) ); ?>
+			<?php
+            if (is_single()) {
+                the_content();
+            } else {
+                the_excerpt();
+            }
+            ?>
 
 			<?php gk_post_fields(); ?>
 			<?php gk_post_links(); ?>

@@ -321,8 +321,6 @@ function chapter_children($query) {
         // $kids = get_term_children(, 'chapters');
         // var_dump($kids);
     }
-
-
 }
 
 // Add CSS classes to body
@@ -347,6 +345,14 @@ function tdo_sidebar(){
     do_action('tdo_sidebar');
 }
 
+// replace default [...] with link in excerpts
+function tdo_new_excerpt_more( $more ) {
+    return ' [<a class="read-more" href="'
+        . get_permalink( get_the_ID() )
+        . '">'
+        . __( 'Continue reading <span class="meta-nav">&rarr;</span>', GKTPLNAME )
+        . '</a>]';
+}
 
 /*
 |--------------------------------------------------------------------------
@@ -366,6 +372,7 @@ register_activation_hook(__FILE__, 'tdo_activate');
 add_filter( 'template_include', 'tdo_template_chooser');
 add_filter('the_title','remove_private_prefix');
 add_filter('body_class','tdo_body_classes');
+add_filter( 'excerpt_more', 'tdo_new_excerpt_more' );
 
 /*
 |--------------------------------------------------------------------------
