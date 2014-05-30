@@ -12,11 +12,13 @@ global $tpl;
 
 	<article id="resource-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header>
-      <hgroup>
+
         <h2><a href="<? the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <h3>Contributed by: <?php the_author(); ?></h5>
-      </hgroup>
-		</header>
+        <?php if (is_single()): ?>
+            <h3>Contributed by: <? the_author(); ?></h3>
+        <?php endif; ?>
+
+	</header>
     <section class="metacrap">
       <h5><? the_terms(get_the_ID(), 'resource_types', 'Resource type: ') ?></h5>
       <h5><? the_terms(get_the_ID(), 'chapters', 'Related chapters: ') ?></h5>
