@@ -149,7 +149,8 @@ function tdo_resources(){
 
   $taxonomies = array(
     'resource_types',
-    'chapters'
+    'chapters',
+    'post_tag'
   );
 
   $rewrite = array(
