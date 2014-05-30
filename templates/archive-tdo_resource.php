@@ -26,6 +26,15 @@ gk_load('before');
     }
     ?></h1>
 
+    <?
+    if (is_tax()) {
+        $term_desc = term_description($wp_query->get('term_id'), $tax );
+        ?>
+        <h4><i><? echo $term_desc; ?></i></h4>
+        <?
+    }
+    ?>
+
 	<?php if ( have_posts() ) : ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
