@@ -167,7 +167,6 @@ function tdo_resources(){
     'has_archive'	=> false,
     'rewrite'		=> $rewrite,
     'map_meta_cap'   => true,
-    'exclude_from_search' => true,
   );
 
   register_post_type( 'tdo_resource', $args );
