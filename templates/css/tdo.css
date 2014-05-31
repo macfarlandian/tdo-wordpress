@@ -19,3 +19,33 @@ nav#chapters .jstree-children .jstree-node {
 input#chaptersearch {
   width: 100%;
 }
+#gk-mainbody section.recent h2.recent {
+  margin-top: 60px;
+}
+#gk-mainbody section.recent h3.alltype {
+  margin-left: 25px;
+}
+#gk-mainbody section.recent h3.alltype a {
+  color: #005196;
+}
+#gk-mainbody section.recent article {
+  margin-left: 25px;
+}
+#gk-mainbody section.recent article header {
+  margin: 0;
+}
+#gk-mainbody section.recent article header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+#gk-mainbody section.recent article h5 {
+  font-size: 15px;
+  margin: 0;
+}
+#gk-mainbody section.recent article .content {
+  font-size: 13px;
+  line-height: 1.5;
+}
+#gk-mainbody section.recent article .content p {
+  margin: 0;
+}

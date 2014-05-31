@@ -15,11 +15,43 @@ gk_load('before');
 ?>
 
 <section id="gk-mainbody">
-	<?php // the_post(); ?>
+	<?php the_post(); ?>
+    <article id="tdo_resource">
+        <h1><? the_title(); ?></h1>
+    	<?php the_content() ?>
+        <section class="recent">
+        <?php
+            $all_types = get_terms('resource_types');
 
-	<?php // get_template_part( 'content', 'page' ); ?>
-
-	<?php //comments_template( '', true ); ?>
+            foreach ($all_types as $type) {
+                $type_args = array(
+                    'post_type' => 'tdo_resource',
+                    'numberposts' => 3,
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'resource_types',
+                            'terms' => (int)$type->term_id
+                        )
+                    )
+                );
+                $recent_posts = get_posts($type_args)
+            ?>
+            <h2 class='recent'>Recently posted in '<?php echo $type->name; ?>':</h2>
+            <?php
+                foreach ($recent_posts as $rpost) {
+                    global $post;
+                    $post = $rpost;
+                    setup_postdata($post);
+                    include(tdo_get_template_hierarchy( 'content-tdo_resource' ));
+                }
+                ?>
+                <h3 class="alltype"><a href="<?php echo get_term_link($type); ?>">Browse all <?php echo $type->name; ?>&rarr;</a></h3>
+                <?
+            }
+            wp_reset_postdata();
+        ?>
+        </section>
+    </article>
 </section>
 
 <?php

@@ -37,5 +37,5 @@ global $tpl;
 			<?php gk_post_links(); ?>
 		</section>
 
-		<?php get_template_part( 'layouts/content.post.footer' ); ?>
+		<?php // get_template_part( 'layouts/content.post.footer' ); ?>
 	</article>
