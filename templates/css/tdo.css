@@ -27,6 +27,7 @@ input#chaptersearch {
 }
 #gk-mainbody section.recent h3.alltype a {
   color: #005196;
+  text-decoration: underline;
 }
 #gk-mainbody section.recent article {
   margin-left: 25px;
@@ -48,4 +49,12 @@ input#chaptersearch {
 }
 #gk-mainbody section.recent article .content p {
   margin: 0;
+}
+.metacrap a {
+  text-decoration: underline;
+  color: #005196;
+}
+a.read-more {
+  text-decoration: underline;
+  color: #005196;
 }
