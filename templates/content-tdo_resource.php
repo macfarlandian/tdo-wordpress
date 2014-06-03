@@ -21,7 +21,19 @@ global $tpl;
 	</header>
     <section class="metacrap">
       <h5><? the_terms(get_the_ID(), 'resource_types', 'Resource type: ') ?></h5>
-      <h5><? the_terms(get_the_ID(), 'chapters', 'Related chapters: ') ?></h5>
+      <h5>Related chapters: <?
+			$the_chapters = get_the_terms(get_the_ID(), 'chapters');
+			$i = 0;
+			foreach ($the_chapters as $the_chapter) {
+				if ($i != 0) { echo ', '; }
+				$i++;
+				?>
+				<a href="<?php echo get_term_link($the_chapter);  ?>"><?php echo $the_chapter->name; ?></a> [<a target="_blank" href="<?php echo tdo_chapter_link($the_chapter->name);  ?>">read</a>]
+				<?
+			}
+
+			?>
+	  </h5>
     </section>
 
 		<section class="content">

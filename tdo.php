@@ -351,6 +351,54 @@ function tdo_new_excerpt_more( $more ) {
         . '</a>]';
 }
 
+// link to reader chapter
+function tdo_chapter_link($chapter) {
+/*
+    url pattern:
+    /ch0x.xhtml
+    /ch0x.xhtml#section-x.1[.y]
+    /ch0xs0y.xhtml
+    /ch0xs0y.xhtml#section-x.y.z
+
+*/
+    $chapter_parts = explode('.', $chapter);
+    $url = "http://tdo.berkeley.edu/reader/ch";
+    for ($i=0; $i < count($chapter_parts); $i++) {
+        switch ($i) {
+            case 0:
+                if ((int)$chapter_parts[$i] < 10) {
+                    $url .= '0';
+                }
+                $url .= $chapter_parts[$i] . '.xhtml';
+                break;
+            case 1:
+                if ($chapter_parts[$i] == '1'):
+                    $url .= '#section-' . $chapter_parts[0] . '.1';
+                else:
+                    if ((int)$chapter_parts[$i] < 10) {
+                        $pad = '0';
+                    } else {
+                        $pad = '';
+                    }
+                    $url = substr_replace($url, 's' . $pad . $chapter_parts[$i], -6, 0);
+                endif;
+                break;
+            case 2:
+                if ($chapter_parts[1] != '1'):
+                    $url .= '#section-' . $chapter_parts[0] . '.' . $chapter_parts[1];
+                endif;
+                $url .= '.' . $chapter_parts[$i];
+                break;
+
+            default:
+                $url .= '.' . $chapter_parts[$i];
+                break;
+        }
+    }
+
+    return $url;
+}
+
 
 /*
 |--------------------------------------------------------------------------
