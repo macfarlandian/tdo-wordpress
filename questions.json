@@ -1,0 +1,452 @@
+[
+    {
+        "question": "An issue long discussed in information science is the “abstraction hierarchy of the work.” Briefly explain this abstract challenge. Discuss why it remains an important part of the intellectual foundations of information organization, or else argue that it no longer matters very much. Use specific examples or “use cases” to make your points.",
+        "section": 3.3,
+        "tags": "abstraction",
+        "title": "The “Abstraction Hierarchy of the Work”"
+    },
+    {
+        "question": "Web merchants need an aggregated product catalog so they can offer products from many suppliers in a single place. A key requirement is being able to easily incorporate the products when a new supplier is brought in. Identify at least three issues about information organization that need to be dealt with in the design and implementation of this catalog.",
+        "section": "9.3.2, 7.1.5, 2.2, 2.4, 3.3, 3.4",
+        "tags": "aggregation, interoperability",
+        "title": "Aggregated Product Catalogs"
+    },
+    {
+        "question": " ● What are two ways to determine authenticity of a resource, whether physical or digital? (2 points) ● What are two ways to determine the authenticity of physical resources that do not apply to digital ones? What are their strengths and weaknesses? (4 points) ● What are two ways to determine authenticity of digital resources that do not apply to physical ones? What are their strengths and weaknesses? (4 points)",
+        "section": "3.5.3",
+        "tags": "authenticity, physical vs. digital resources",
+        "title": "Authenticity in perspective?"
+    },
+    {
+        "question": "Authority control is a traditional topic in library science and remains an important issue in enterprise and inter-enterprise information management. • What is authority control? • What problems does authority control attempt to solve? • Compare the methods and effectiveness of authority control in the library setting, inside single enterprise, and in inter-enterprise contexts.",
+        "section": 3.4,
+        "tags": "authority control",
+        "title": "Authority Control"
+    },
+    {
+        "question": "One common criticism of traditional “authoritative” approaches to organizing and publishing information is that the organizers often exclude the perspective of ethnic, cultural, and intellectual minorities. In recent years, commentators like David Weinberger have touted online media as a solution to this problem, pointing to the accessible self-publishing tools and distributed categorization available to Internet users. Increasingly, however, these tools have also been criticized for helping “the rich get richer” while minorities are left out of the online discourse. • Explain why minority voices might be excluded by a. traditional authoritative information organization approaches b. social categorization systems like Digg or del.icio.us, and c. Google’s page ranking and relevancy algorithms. • Make a clear argument for which of these information organization and retrieval approaches you feel is best at bringing minority viewpoints to appropriate public attention.",
+        "section": "1, 10",
+        "tags": "authority, minority voices",
+        "title": "Minority Voices and the Web "
+    },
+    {
+        "question": "Why is a Bayesian approach to classifying email as spam or not spam more effective than the simpler and more obvious approach of classifying messages as spam when they contain words most often contained in spam messages (like madam, promotion, republic, sex,, etc.)?",
+        "section": "6.5.2, 7.6",
+        "tags": "Bayesian classification",
+        "title": "Bayesian Approaches to Spam Classification"
+    },
+    {
+        "question": "Doctorow argues that It's wishful thinking to believe that a group of people competing to advance their agendas will be universally pleased with any hierarchy of knowledge. • Give an example of a controversial system of categories that illustrates this point. Who are/were the competing parties and why are/were they so invested in the development of that system? • When a system of categories is designed by a single authority rather than being developed collaboratively by different groups that will all use it, how is the standardization process different? • How is the resultant system of categories likely to differ in these two situations?",
+        "section": 7.2,
+        "tags": "bias",
+        "title": "The Politics of Categorization"
+    },
+    {
+        "question": "Explain each of the following two parts of a claim about the design of categories: • “Every system of categories is biased…” • “…and not every system of categories is equally good”",
+        "section": "6, 7",
+        "tags": "bias",
+        "title": "Categorization and Bias"
+    },
+    {
+        "question": "The Electronic Product Environmental Assessment Tool (EPEAT) rates the impact of electronic products on the environment. It recently classified Apple's new Retina MacBook Pro as Gold (the highest ranking), which Wired's article Greenwashing the Retina MacBook Pro (http:// www.wired.com/opinion/2012/10/apple-and-epeat-greenwashing/) described as greenwashing (i.e. presenting something as environmentally friendly even when it isn’t). From the article: With the Retina MacBook Pro, EPEAT felt there were three specific concerns about the product design that merited further investigation. Here are the relevant portions of the standard: ○ “Product shall be upgradeable with commonly available tools.” ○ “External enclosures shall be easily removable by one person alone with commonly available tools. Hard disk, digital versatile disc (DVD), floppy drive can be changed or extended. Memory and cards can be changed or extended.” ○ “Circuit boards >10 square cm (measured on the largest face), batteries, and other components – any of which contain hazardous materials – shall be safely and easily identifiable and removable.” Does the Retina MacBook meet those criteria? On the surface, it seems that a product assembled with proprietary screws, glued-in hazardous batteries, non-upgradeable memory and storage, and several large, difficult-to-remove circuit boards would fail all three tests. ● How did category definitions lead to accusations of “greenwashing”? Provide a specific example. (4 points) ● Describe one form of bias in this classification system. (2 points) ￼￼￼￼￼￼￼￼￼￼ ● When a system of categories is designed by a single authority rather than being developed collaboratively by different groups that will all use it, how is the standardization process different? (4 points)",
+        "section": "7.2.3, 7.1.1, 7.1.5",
+        "tags": "bias, standards, categorization",
+        "title": "EPEAT Classification"
+    },
+    {
+        "question": "If we find two articles that have overlapping bibliographies, what should we conclude? (they come from the same discipline, they are about the same topics. or are they plagiarized)",
+        "section": 5.5,
+        "tags": "citation analysis",
+        "title": "Overlapping bibliographies"
+    },
+    {
+        "question": "(a) How does traditional citation analysis work and what does it measure? (1 point) b) Identify and explain one strength and one weakness of traditional citation analysis. (2 points) How does a web link analysis work and what does it measure? (1 point) d) Identify and explain one strength and one weakness of web link analysis. (2 points) e) Make an argument for or against including web link analysis and social media activity in assessments of academic work. Your argument should engage with the following issues: What measures do you think should be used? What biases is your method seeking to correct or avoid? What are the biases of your approach and why do you prefer them to other biases? (4 points)",
+        "section": "9.3, 5.5.3",
+        "tags": "citation analysis, link analysis, bias",
+        "title": "Altmetrics and adapting citation analysis to the web and social media"
+    },
+    {
+        "question": "If the links pointing to a web page can be thought of as citations to it, we can make an analogy to Shepardizing of published legal rulings and cases. • What would it mean to Shepardize the Web? (5 points) • Is it possible? Why or why not? (5 points)",
+        "section": "5.5.3.3, 8.4, 2.3.2",
+        "tags": "citation analysis, web resources",
+        "title": "Shepardizing the Web"
+    },
+    {
+        "question": "Categorization is essential in how we organize resources, and categories are involved whenever we communicate, analyze, predict, classify, or impose order. This semester we contrasted different theories or models of category membership and some of their implications for organization and interaction.  Briefly discuss two problems with the classical property-based model of category membership. (4 points) Are these two problems recognized and dealt with in IR systems that use Boolean models? Why or why not? (2 points) Are these two problems recognized and dealt with in IR systems that use vector models? Why or why not? (2 points) ",
+        "section": "6.3, 6.5, 9.4",
+        "tags": "classical categories, Boolean search, vector search",
+        "title": "IR Models and Categorization"
+    },
+    {
+        "question": "What is the relevance of standards for information organization and access/retrieval processes for compliance with the Sarbanes-Oxley Act, the Patriot Act, HIPPA or other regulatory mandates?",
+        "section": "2.5.1, 2.5.4, 4.3.6, 7.1.5",
+        "tags": "compliance",
+        "title": "Corporate Compliance "
+    },
+    {
+        "question": "a) When is it desirable or necessary to employ computational techniques (as opposed to those performed by people) in the design and use of organizing systems? (4 points) b) What problems do computational techniques prevent or remedy? (3 points) c) What are some challenges involved in using computational techniques? (3 points)",
+        "section": "4.3.6, 7.6, 2.5.3",
+        "tags": "computational organizing",
+        "title": "Computational Techniques and Organizing Systems"
+    },
+    {
+        "question": "Designing (and precisely defining semantics for) a “good” vocabulary is challenging, essential, and impossible to do perfectly. a) What characteristics make a markup language or controlled vocabulary “good” for some domain? (2 points) b) What processes or techniques can you use to make your vocabulary a good one? (2 points) c) If a markup language or vocabulary claims to cover a domain you're interested in, what should you do? (2 points) d) How would you assess the consistency of abstraction of a markup language? (2 points) e) How would you assess the granularity of a markup language? (2 points)",
+        "section": "4, 8",
+        "tags": "controlled vocabulary, markup language, abstraction, granularity",
+        "title": "Designing a Vocabulary or “Markup Language”"
+    },
+    {
+        "question": "IR models that employ computational techniques like Singular Value Decomposition for dimensionality reduction yield the counter-intuitive result that using a small number of terms to describe something can produce better results than using a large number of terms   • Explain how the large set of terms is reduced to a smaller set (qualitatively or intuitively; you don’t need to explain the math (5 points) • By which criteria are the results objectively “better” than those obtained with the large set? (5 points)",
+        "section": "9.4, 9.5",
+        "tags": "dimensionality reduction",
+        "title": "Dimensionality Reduction"
+    },
+    {
+        "question": "Define “dimensionality reduction” in terms of resource description. (2 points) Explain the difference between supervised and unsupervised learning techniques (2 points) Briefly describe two examples of automated approaches to reducing the dimensionality of resource description, one that involves “supervised learning” and one that is “unsupervised.” (4 points) What is the impact of dimensionality reduction on precision and recall measures in information retrieval? (2 points)",
+        "section": "4.3.4.4, 4.3.4.1, 9.4, 9.5.3",
+        "tags": "dimensionality reduction, machine learning, recall vs. precision",
+        "title": "Dimensionality Reduction"
+    },
+    {
+        "question": "How does the amount of information organization affect the design of UIs to them, in search and in creating instances of data models? How does the Document Type Spectrum relate to UIs for information systems? ",
+        "section": "2.3.2, 10.4, 3.2.1",
+        "tags": "document type spectrum, modeling, user interfaces",
+        "title": "IO and UIs"
+    },
+    {
+        "question": "● Define the concept of “Document Type Spectrum.” (2 points) ￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼￼● Why is the concept of DTS useful with respect to organizing systems? (3 points) ● What determines the location of a document type on the DTS? (2 points) ● How does the mixture of presentation, content, and structure rules for document types differ across the Document Type Spectrum? (3 points)",
+        "section": "3.2.1",
+        "tags": "document type spectrum, separation of content from presentation",
+        "title": "Document Type Spectrum"
+    },
+    {
+        "question": "Printed Documents in Notebooks; Separate Printed Documents; Files on Personal Computer; Files on Network; Books; Company Email; Newspapers, Magazines, & Journals; Business Cards; Personal Email; Web Bookmarks; Maps; Printed Calendars; Desk Phone Voice Mail; Cell Phone Voice Mail; PDA (Files, Phone #s, Calendar); Desk Drawers; Whiteboard; Cell Phone Phone #s, Bookcase, Post-it Notes, File Cabinet, Tables. All of these “entities” or “objects” might be part of someone’s “Personal Space of Information.” Propose a system of at least 4 dimensions or facets that would be useful in a system for organizing information. • For each facet, provide a name, a definition, and a brief explanation of the possible values.",
+        "section": 7.4,
+        "tags": "faceted classification",
+        "title": "Facets in PIM"
+    },
+    {
+        "question": "You are organizing your household “tools” and have decided that a faceted classification system is how you want to handle it. You have the following items to categorize: ‐Blender ‐Screwdriver ‐Tape measure ‐Frying pan ‐Electric Drill ‐Rake ‐Sponge mop ‐Vacuum cleaner ‐Shovel ‐Bucket Come up with three facets for your organizing system, and a value list for each facet. Explain your choices and why they are the best ones for your household. (6 points, two for each facet) Give two examples of facets that you could have used but choose not to. Explain why they are not as good as the facets you chose. (2 points) What are the arguments for a faceted classification system with universal facets? (1 point) What are the arguments against a faceted classification system with universal facets? (1 point)",
+        "section": 7.4,
+        "tags": "faceted classification",
+        "title": "Faceted Classification"
+    },
+    {
+        "question": "● It has been said that the separation of content from presentation is the most important idea in information architecture. What does this mean? (2 points) ● Why is it an important principle of information model design and information architecture? (4 points) ● Where does this idea emerge most clearly in the analysis and design of organizing systems? (4 points)",
+        "section": "1.2.3.1, 2.3.2, 10.5.2 ",
+        "tags": "information architecture, modeling, separation of content from presentation",
+        "title": "Information Architecture and Organizing Systems"
+    },
+    {
+        "question": "What are three important differences in the content of the document collection between web search systems and more traditional bibliographic information retrieval systems? For each, describe in a sentence or two how the difference affects information retrieval. (3 points) For each difference you listed above, describe a technique employed by web search engines to improve their results. (3 points) Are bibliographic IR systems still important today? Why or why not? (1 point) Recently, web search has moved beyond just returning relevant results to a user's query to Do What I Mean (DWIM) results. Give an example of a DWIM type of query and explain what additional contextual information the search engine would need to get the query right.",
+        "section": 9,
+        "tags": "information retrieval",
+        "title": "Bibliographic IR vs. Web Search"
+    },
+    {
+        "question": "The first half of the course dealt mostly with information organization while the second half focused on information retrieval but the distinctions between these disciplines have eroded significantly. Explain why. (2 points) The Boolean retrieval model was presented as a method of performing full text search but it could easily be used to find resources based on how they are categorized enabling faceted search. Describe how the Boolean retrieval enables basic full text search. (2 points) Explain how the Boolean model could be extended to allow faceted search. (2 points) Explain the major differences between the vector and the Boolean model. (2 points) Could a vector model be applied to a faceted search? Why or why not? (2 points)",
+        "section": "9, 7.4",
+        "tags": "information retrieval, boolean search, vector search, faceted classification, search",
+        "title": "Bridging IO and IR"
+    },
+    {
+        "question": "a) A customer might contact a company by email or by phone. Which channel of customer contact is harder to automate and why? (2 points) b) What kind of entities would the company want to extract form a customer message? (2 points) c) Why would a Bayesian classifier do better than keyword matching techniques in determining the intent, urgency, or sentiment of the customer's message? Give examples. (2 points) d) What NLP techniques could be used to automatically generate a personalized reply to the customer? (2 points) e) If the incoming message can't be handled automatically, it can be routed to the human customer service agent whose knowledge is most appropriate to the customer's concerns. How might this match between the message and the customer service agent be accomplished? (2 points)",
+        "section": "7, 9",
+        "tags": "information retrieval, natural language processing, computational classification",
+        "title": "Automated Customer Service"
+    },
+    {
+        "question": "In Document Engineering, Glushko and McGrath write that The most basic requirement for two businesses to conduct business is that their business systems interoperate and that Interoperability is an easy goal to express but hard to achieve. • Define “interoperability” • Why might interoperability be “the most basic requirement” for two businesses to conduct business? • When is interoperability easy to achieve? • When is interoperability hard to achieve?",
+        "section": "5.8.3, 9",
+        "tags": "interoperability",
+        "title": "Interoperability"
+    },
+    {
+        "question": "Selecting index terms and the terms of a markup language are related but distinct challenges. Compare and contrast them, being sure to discuss: • (a) the scope to which the terms apply • (b) the methods or mechanisms for identifying the terms • (c) tradeoffs that could be made about the precision and robustness of the terms • (d) the properties of “good” term • (e) how the terms are assigned to instances.",
+        "section": 4,
+        "tags": "markup languages",
+        "title": "Selecting Index Terms {and, or, vs} Designing a Markup Language"
+    },
+    {
+        "question": "You are working with a California historical society on a database for their digital archives. The database will be searchable through an online interface for historical researchers and the general public. The archives contain a mix of text-based documents and historical prints, photographs, and maps. Your job is to help develop a descriptive specification for the items in the collection. a) What are two metadata elements that might be useful for describing all of the items in the collection, regardless of media type? (2 points) b) What are two metadata elements that might be useful in describing text items but would not be useful in describing multimedia items? (2 points) c) What are two metadata elements that might be useful in describing multimedia items but would not be useful in describing text objects? (2 points) d) What are two metadata elements that might be useful to the society’s staff, but which you might not want to show to the general public? (2 points) e) Another historical society in a different state also wants you to develop meta information specifications for their collection. Can you use the same set of specifications? Why or why not? (2 points)",
+        "section": 4,
+        "tags": "metadata, resource description",
+        "title": "Metadata Models and Media Types"
+    },
+    {
+        "question": "Many of the concepts, technologies and techniques in information organization, information retrieval, and user interface design were developed for dedicated (as in a library or office) or desktop-based computing environments. (a) How should information organization change in response to the opportunities and challenges of mobile and context-aware computing? (4 points) (b) How should information retrieval change in response to the opportunities and challenges of mobile and context-aware computing? (4 points) (c) How should user interfaces change in response to the opportunities and challenges of mobile and context-aware computing? (2 points)",
+        "section": 10,
+        "tags": "mobile computing, context-aware computing, information organization, information retrieval",
+        "title": "Mobile and Context-Aware Computing"
+    },
+    {
+        "question": "What are the differences between heavyweight and lightweight approaches to modeling? (1 point) What is the difference between high dimensionality and low dimensionality resource description? (1 point) Does heavyweight modeling always result in high dimensionality resource description? Why or why not? (2 points) How could lightweight modeling result in high dimensionality resource description? Give an example. (2 points) Describe an automated method for converting a high dimensionality description to a low dimensionality one. (2 points) Describe a non-automated method for converting a high dimensionality description to a low dimensionality one. (2 points) ",
+        "section": "6.4, 8.2, 4.3, 9.3",
+        "tags": "modeling, dimensionality reduction",
+        "title": "Lightweight v. Heavyweight Modeling, Low Dimension v. High Dimension Representation -"
+    },
+    {
+        "question": "You're working as an information consultant for the public radio network NPR. You’ve been asked to design an application that allows users to engage with past and present content, including the audio recording, text transcripts and summaries, and additional materials including video and photographs. The producers have an Excel spreadsheet with one entry for every broadcast, along with their transcripts. ● What metadata should be associated for each of the resource types in order to accomplish their application’s stated goals? (6 points) ● What aspects of professional metadata and standards might they consider? (2 points) ● How might crowdsourcing aid or hinder their efforts? (2 points)",
+        "section": 4,
+        "tags": "multimedia, describing non-text resources, resource descriptions",
+        "title": "Multimedia IO"
+    },
+    {
+        "question": "Kimra and Jess demonstrated some alternative systems for multimedia information retrieval in class. Some of these examples include: Color — Guitarati: http://guitarati.com/ Tags — Last.fm: http://www.last.fm Emotion — Stereomood: http://www.stereomood.com Facial recognition — VideoSurf: http://www.videosurf.com/ ￼￼￼ Choose one of these systems, either music or video, and compare and contrast it with a traditional media library interface that sorts by basic metadata (e.g., artist, song title, genre, and album name). Note: You may click on the links above. Just make sure your computer’s volume is muted, and remember that this isn’t an invitation to search the open web.  ● What challenges might someone used to a traditional system face in using this new system? (2 points) ● What advantages does your chosen system have over a traditional system? (2 points) ● What advantages does the traditional system have over your alternative system? (2 points)",
+        "section": "3.4, 4.4",
+        "tags": "multimedia, non-text resources",
+        "title": "Multimedia Metadata and Retrieval"
+    },
+    {
+        "question": "In the “ESP” game and similar image labeling games on the web, two people who don’t know each other assign text descriptions to images. They get points if they agree on a label for an image without any discussion. • Why does Google encourage people to play this game? • In the game, scoring is lowest for abstract or very broad categories (“animal” gets a lower score than “bird’). Why does this make sense? • Scoring is highest for multi-word or compound descriptions (“bald eagle” gets more points than “bird”). Why does this make sense?",
+        "section": "3.4, 4.4, 6.4",
+        "tags": "multimedia, non-text resources, naming, abstraction, recall vs. precision",
+        "title": "The “Image Labeling” Game"
+    },
+    {
+        "question": "The US Government's Transportation Security Administration has recently imposed the requirement that the name on your airline ticket must match exactly the name on whatever government-issued ID you use.  • How well is this new rule likely to work? (2 points) • What kinds of problems could arise with this new requirement?  What would cause them?  (4 points) • What can be done to fix these problems and prevent them from recurring? (4 points)",
+        "section": "3.3, 3.4",
+        "tags": "names, identifiers",
+        "title": "The Transportation Security Agency’s New Rule"
+    },
+    {
+        "question": "Why is it hard to design a set of elements for use as metadata or as a descriptive vocabulary? • What is it hard to design a system of categories? • Why is it hard to define the authoritative form of a name?",
+        "section": "3.4, 4.3, 6.4",
+        "tags": "naming",
+        "title": "The Wisdom of Svenonius"
+    },
+    {
+        "question": "● Define “name” and “identifier” using the pattern: hyponym = {adjective+} hypernym {distinguishing clause+} (2 points) ● What are three important concerns when assigning names to resources? (3 points) ● For each concern, point out whether it also applies to identifiers or not. (3 points) ● What is one concern about identifiers that does not usually apply to names? (1 point) ● What is one way in which assigning names or identifiers to categories is different than assigning them to individual resources? (1 point)",
+        "section": "3.3, 3.4, 6.2",
+        "tags": "naming, identifiers, categorization",
+        "title": "Names vs. Identifiers"
+    },
+    {
+        "question": "Explain how the relationships among content, structure, and presentation vary systematically across the Document Type Spectrum. Is there an analogous “multimedia type spectrum” in which the presence or role of multimedia varies systematically with content and structure? Include specific types of multimedia documents or content types to make your argument. How do these systematic variations shape authoring, organization, and retrieval activities?",
+        "section": "3.2.1, 4.4, 9.2",
+        "tags": "non-text resources, multimedia, document type spectrum",
+        "title": "Is there a Multimedia Type Spectrum? "
+    },
+    {
+        "question": "A large collection of photos needs to be organized so that new photos can be  added and photos can be located using some kind of search mechanisms.   • What are the advantages of using textual metadata associated with each photo for these purposes?  (4 points) • What are the disadvantages of relying on textual metadata? (4 points) • How can the vector space model be applied to photo retrieval? (2 points)",
+        "section": "3.4, 4.4, 9.4",
+        "tags": "non-text resources, multimedia, vector search",
+        "title": "Photo Retrieval"
+    },
+    {
+        "question": "If you analyze how you organize the information and “stuff” in your kitchen, office, or another area in which purposeful activity takes place, you’ll probably discover at least three different principles of organization. Sometimes more than one principle is applied to the same type of information or “stuff.”   • Identify and define three principles of organization, providing examples of  the kind of information or stuff to which it is being applied. o Principle 1 and examples (4 points) o Principle 2 and examples (4 points) o Principle 3 and examples (4 points)   • Out of these three principles, identify which is the most important or  dominant principle and explain why. (4 points) • Explain an example where some kind of information or stuff is primarily  organized according to a principle that might be counter-intuitive, less  than optimal, or otherwise interesting from an organizing system perspective. (4 points)",
+        "section": "1, 2.3",
+        "tags": "organizing principles",
+        "title": "Principles of Organization in a Personal or Individual Context"
+    },
+    {
+        "question": "A research biologist working on genetics and an animal keeper walk into a bar in San Diego, not far from the San Diego Zoo. After several drinks while watching the Panda Cam on a nearby TV, which is currently showing clips of Bai Yun, a female panda on loan from the Wolong Giant Panda Research Center in China that the biologist has been studying. They get into an argument about how to characterize organizing systems with collections of animal resources. The animal keepers describes the San Diego Zoo as an exemplary zoo. What principles and interactions might he propose as evidence for this characterization of the organizing system? (2 points)",
+        "section": 10,
+        "tags": "organizing principles, interactions",
+        "title": "Animal Organizing Systems"
+    },
+    {
+        "question": "We produce, consume, and experience information as individuals, in implicit association with other individuals, and as explicit members of business or institutional environments.  The challenges we face to understand and organize information vary systematically in these three different contexts. Explain three of these challenges and explain how we deal with them in each of the three contexts.",
+        "section": "10.3, 10.5, 1.3",
+        "tags": "organizing system contexts",
+        "title": "Contexts for Information Organization"
+    },
+    {
+        "question": "● What are two important differences between individual organizing systems and institutional ones? (2 points) ● Briefly define two typical organizing principles for resource collections belonging to individuals and explain why they are appropriate for some domain that you choose as an example. (3 points) ● Briefly define two typical organizing principles for resource collections belonging to institutions and explain why they are appropriate for some domain that you choose as an example. (3 points) ● Briefly define two organizing principles that would be appropriate for both the individual and institutional organizing systems that you chose as examples. (2 points)",
+        "section": "10.3, 10.5, 1.3",
+        "tags": "organizing system contexts",
+        "title": "Principles of Organization and Categorization “Contexts” "
+    },
+    {
+        "question": "How is enterprise information management different from information management “in the wild” outside of the enterprise? (4 points) • How do these differences affect the extent and methods of information organization? (4 points) • How do these differences affect the goals and criteria for information retrieval? (4 points) • How do these differences affect suitability and effectiveness of different information retrieval models? (4 points) • How do these differences affect the extent to which social techniques--such as blogs, wikis, and tagging--are likely to be used and their likely effectiveness? (4 points)",
+        "section": "9, 2, 4.3, 7.1.5, 10.4",
+        "tags": "organizing system contexts, information retrieval",
+        "title": "Enterprise Search vs. Internet IO & IR"
+    },
+    {
+        "question": "Explain why some people have criticized Google’s page ranking and relevancy mechanisms for enabling “the rich to get richer” in text document search and retrieval. Does this criticism also apply for multimedia? Be specific about the characteristics of multimedia (as opposed to text) in your arguments.",
+        "section": "9.4.3, 5.5.3, 10.4.2, 4.4",
+        "tags": "pagerank, multimedia, non-text resources",
+        "title": "Google Page Rank, Relevancy and “The Rich Get Richer”"
+    },
+    {
+        "question": "Jeff Bezos is the founder, president, and CEO of Amazon.com. The world’s largest online retailer, Amazon.com began by selling books and now sells nearly everything you can imagine. In 2009, CBS News wrote of Bezos, “the man who has grown accustomed to being hailed the king of Internet commerce runs a global powerhouse that did nearly $7 billion in sales last year, dealing in everything from banjo cases to wild boar baby back ribs. John Evans is the co-owner of Diesel, a small neighborhood bookstore in Oakland. Evans says that Diesel is “the cutting-edge, high octane, community-radiating, independent neighborhood bookstore we all dream of hanging out in, getting imaginally turned on in, and literarily inspired by.” Diesel’s website also announces that if you visit their store you can pick up a free “Occupy Amazon” button or coaster. One night last week, Mr. Bezos and Mr. Evans walked into the Graduate, a bar in Oakland, and proceeded to debate the merits of their respective companies. What did they say? Feel free to respond in the form of dialog as seen in a script. Please be creative.  What are two advantages that Bezos would suggest that Amazon.com has over Diesel with regard to the way books are organized? (2 points) What are two advantages that Evans would suggest that Diesel has over Amazon.com with regard to the way books are organized? (2 points) What is one problem that Amazon.com has that Diesel doesn’t? (2 points) What is one problem that Diesel has that Amazon.com doesn’t? (2 points) Is one model better than the other for selling books to customers? If so, which person is right, and why? (2 points)",
+        "section": "2.3.2, 9.2, 9.5",
+        "tags": "physical vs. digital resources, evaluating interactions",
+        "title": "A Duel: Jeff Bezos vs John Evans"
+    },
+    {
+        "question": "You’ve been selected to develop the organizing system for a music collection to be shared by the entire class of 2013. Each student is expected to contribute to the collection and to use it as their primary source of music. In addition to digital media, the collection will include various forms of music encoded in physical media. What are the three most important organizing principles of the organizing system? Explain your choices. (3 points) What are the three most important interactions the organizing system must support? Explain your choices. (3 points) What issues arise because the collection contains both physical and digital resources? How will you deal with them? (2 points) What issues relating to authority arise in this collection? How will you address these issues? (2 points)",
+        "section": "3.4, 2.3, 4.4, 10.3, 10.4 ",
+        "tags": "physical vs. digital resources, non-text resources, multimedia, authority control",
+        "title": "Music Collection"
+    },
+    {
+        "question": "Conventional relevance feedback is concerned with retrieved documents and their contents. IR systems use this feedback to change the likelihood that a document will be returned for a particular query. Compare and contrast relevance feedback with collaborative filtering or recommender systems.",
+        "section": "9.5.2, 2.5.3, 9.4",
+        "tags": "relevance feedback",
+        "title": "Relevance Feedback and Collaborative Filtering"
+    },
+    {
+        "question": "How resources are described shapes the organizing principles that can be used with them and the interactions that can take place with them. What factors determine the nature and extent of resource description in an organizing system? (4 points) What problems can arise if too few descriptions are applied to resources? (3 points) What problems can arise if too many descriptions are applied to resources? (3 points)",
+        "section": 4.3,
+        "tags": "resource descriptions",
+        "title": "Describing Resources"
+    },
+    {
+        "question": "The Delphi project, the subject of a reading assigned for the 11/21 lecture on Mobile and Multimedia IR (http://www.archimuse.com/mw2008/papers/schmitz/schmitz.html), exploited many concepts and techniques from 202 to create a new user experience in accessing the collection of the Hearst Museum. a) What resource descriptions did Delphi start with? Why did they need to be enhanced? (2 points) b) Because of the size and breadth of the collection, these descriptions ocntain many sets of synonyms and polysemes. Is synonymy or polysemy a bigger problem for users trying to find resources in the collection? Give examples of each problem. (2 points) c) How were information and relation extraction techniques used to address the polysemy problem? (2 points) d) How was an ontology used to enhance the descriptions? (2 points) e) How is this ontology used in faceted browsing and search? (2 points)",
+        "section": "4, 7.4, 9.3",
+        "tags": "resource descriptions, faceted classification, text processing",
+        "title": "Delphi"
+    },
+    {
+        "question": "￼There are often multiple sets of resource descriptions (metamodels or schemas) for the same domain. In what ways is this necessary or desirable? (2 points) In what ways is it unnecessary or undesirable? (2 points) In the situations when it is undesirable, what can or should we do about it? (2 points) When might it be important to store resource descriptions separately from the resources they describe? (2 points) When might it be important to embed (or otherwise permanently associate) resource descriptions with the resources they describe? (2 points)",
+        "section": "4.2, 4.3, 8.2",
+        "tags": "resource descriptions, modeling, metamodels, schemas",
+        "title": "Models and Architectures for Resource Description"
+    },
+    {
+        "question": "An issue long discussed in information science is the “abstraction hierarchy of the work.”   • Briefly explain this abstract challenge. • Discuss why it remains an important part of the intellectual foundations of information organization, or else argue that it no longer matters very much.  Use specific examples or “use cases” to make your points.    ",
+        "section": "3.3.2",
+        "tags": "resource identity",
+        "title": "The “Abstraction Hierarchy of the Work”"
+    },
+    {
+        "question": "Why might different web search engines return different sets of documents for the same query?",
+        "section": 9.4,
+        "tags": "search",
+        "title": "Search Engines"
+    },
+    {
+        "question": "An executive of a large company has been misquoted in the press. His comments have received sensational negative coverage in many news and blog stories, and now a search for the executive’s uncommon last name finds this unflattering information on the first page of search results. • Propose and explain at least THREE approaches for making this problem go away by making these undesirable results appear on pages after the first one.",
+        "section": 9.4,
+        "tags": "search",
+        "title": "Overcoming Negative Search Results "
+    },
+    {
+        "question": "(a) What are the most important challenges faced by traditional public and academic libraries with the increasing digitization of information and the popularity of web search engines like Google and social search engines like Facebook Graph Search or Yelp? (2 points) (b)What is ONE thing that Google does that libraries should emulate? (1 point) (c) What is ONE aspect of libraries that Google might want to emulate? (1 point) (e) Describe an information retrieval circumstance where a library would be a better source than a general search engine. What are TWO disadvantages of a general search engine in this case? (2 points) (f) Describe an information retrieval circumstance where social search would be a better source than a library. What are TWO disadvantages of a library in this case? (2 points)",
+        "section": "3, 4, 7, 9",
+        "tags": "search, libraries, information retrieval",
+        "title": "Social Search {and,or,vs} Google {and,or,vs} the Library"
+    },
+    {
+        "question": "Key enabling technologies for the semantic web are RDF and OWL. Explain briefly how each of them contributes to making the web semantic.",
+        "section": "8.2.2, 8.4.3, 5.3",
+        "tags": "semantic web, rdf, ontology",
+        "title": "The Machinery of the Semantic Web"
+    },
+    {
+        "question": "Some parts of the Web are more semantic than others. What is the motivation for making the web semantic? (2 points) What parts are the least semantic and why? (2 points) What parts are the most semantic and why? (2 points) What are two current approaches for making the parts that are the least semantic more semantic? (2 points) Some people think that libraries have great potential for making the web more semantic. How would this take place? (2 points)",
+        "section": "8.4, 5.3",
+        "tags": "semantic web, semantics",
+        "title": "Getting to the Semantic Web"
+    },
+    {
+        "question": "The MITRE paper (Rosenthal, Arnon, Len Seligman, and Scott Renner. “From semantic integration to semantics management: case studies and a way forward.” ACM SIGMOD Record 33, no. 4 (2004): 44-50. dl.acm.org/citation.cfm?id=1041418) contains a number of strategies and insights about standards-making in the real world. a) Explain the person-concept tradeoff proposed in this paper. (3 points) b) How do the existence of ontologies, controlled vocabulary, or standards in a given domain affect the person-concept tradeoff? (2 points) c)  How do the economic relationships among the standards-making parties affect the process and the outcomes? (3 points) d)  When a specification created by a single organization or firm is proposed as a standard, how does the standard differ from those developed collaboratively by many stakeholders? (2 points)",
+        "section": "4.3.4, 5.3, 7.1, 7.2, 10.4",
+        "tags": "standards, controlled vocabularies, tradeoffs, ontology",
+        "title": "Standards Making"
+    },
+    {
+        "question": "a) What is stemming? (1 point) b) What is stemming’s impact on recall and precision? (2 points) c) What are three types of errors can occur when a search engine stems query terms? (3 points) d) How is stemming useful in search? Give an example. (2 points) e) In what situation is stemming not useful in search? Give an example. (2 points)",
+        "section": "9.5.3, 9.3.2, 3.3",
+        "tags": "stemming, recall vs. precision",
+        "title": "Recall, Precision, and Stemming"
+    },
+    {
+        "question": "Digital information objects can be organized into folders or labeled with tags. Compare and contrast folders on your computer and tags on photos in a social photo system like Flickr on at least three dimensions or factors. (10 points)",
+        "section": "6.3.3, 4.2.2.3",
+        "tags": "tagging, hierarchies",
+        "title": "Folders {and,or,vs} Tags"
+    },
+    {
+        "question": "Generally, tagging principles support “desirable” objectives like re-finding your own items more easily or helping others find the items that you tagged. • Make up and describe a scenario in which your objective is to assign tags that would make it difficult or impossible for most people to find your information. • Describe THREE tagging principles that would support this goal and for each explain why and how it would work. Be specific about the principles and include examples of your “anti-tags” that follow the principles.",
+        "section": "4, 6",
+        "tags": "tagging, resource descriptions",
+        "title": "“Anti-tagging”"
+    },
+    {
+        "question": "The enormous amount of information on the web tempts lazy, desperate, or unethical students to plagiarize (i.e., turning in someone else's writing as their own). Web search engines will retrieve exact copies of text, so student plagiarists often disguise their source material by substituting synonyms, changing sentence order, and removing text.  What kinds of search models or natural language processing techniques can detect non-exact copying? Explain why they work. (6 points) If two students turned in nearly identical answers, what kinds of NLP techniques would determine which one was the author and which one was the plagiarist? (4 points)",
+        "section": "9.3, 9.4",
+        "tags": "text processing",
+        "title": "Detecting Plagiarism"
+    },
+    {
+        "question": "If a document collection contains a single type of document, how does its location on the document type spectrum influence the overall benefit of applying Natural Language Processing (NLP) techniques to the collection? (3 points) If a document collection contains a single type of document, how does its location on the document type spectrum influence the overall benefit of introducing semantic web techniques to the collection? (3 points) If a document collection contains more than one type of document from “far apart” places on the document type spectrum, how does this influence the overall value of IR techniques and how would that affect the overall precision and recall? (4 points)",
+        "section": "9.3, 9.4, 3.2.1",
+        "tags": "text processing, document type spectrum",
+        "title": "NLP, Semantic Web, and the Document Type Spectrum "
+    },
+    {
+        "question": "Describe three challenges typically encountered when creating a list of terms from a set of documents. For each include a technique for handling those challenges. (3 points) Given the same collection of documents to index, different search engines might produce different term lists. Why? (1 point) Why do we want to weight a term by both tf and idf? Why not simply use either measure by itself? (1 point)",
+        "section": "8.4.1, 9.3, 9.4",
+        "tags": "text processing, tf-idf, search",
+        "title": "Text Processing and tf * idf"
+    },
+    {
+        "question": "What is the semantic gap for multimedia content? What are the consequences for indexing and retrieval?",
+        "section": "3.4.2.5, 3.4, 4.4",
+        "tags": "the semantic gap",
+        "title": "Semantic Gap"
+    },
+    {
+        "question": "What is the semantic gap for multimedia content? What kinds of IO and IR problems does it pose for individuals? What are the most effective techniques or technologies for dealing with the semantic gap in the PIM context?",
+        "section": "3.4.2.5, 3.4, 4.4, 6.2.2, 7.5, 2.5.3",
+        "tags": "the semantic gap",
+        "title": "Semantic Gap"
+    },
+    {
+        "question": "a) Describe how the semantic gap applies to photos taken with a smart-phone camera. (4 points) b) Suggest three ways that smart phones could bridge the gap and explain how your suggestion would affect indexing and retrieval of those images. (6 points, 1 point per example and 1 point per explanation)",
+        "section": "3.4.2.5, 3.4, 4.4",
+        "tags": "the semantic gap, non-text resources, multimedia",
+        "title": "The Semantic Gap"
+    },
+    {
+        "question": "A filer and a piler walk into a bar.  Identify and briefly explain two problems the piler and the filer have in common when they’re trying to organize and retrieve their personal information. (2 points)  What’s one problem the piler has that the filer doesn’t? (1 point)  What’s one problem the filer has that the piler doesn’t? (1 point) Identify and briefly explain THREE key disagreements the filer and the piler would have about how to handle their personal information. You can list the three areas and then explain the position of the filer and the piler, or you can write each disagreement as a dialogue between the filer and the piler. In either case, make sure to clearly state both parties’ positions and reasoning. (6 points)",
+        "section": "1.3, 2.3, 10.4",
+        "tags": "tradeoffs",
+        "title": "Filers and Pilers"
+    },
+    {
+        "question": "Tradeoffs in the amount or nature of the description and organization of the resources in organizing systems have been a recurring theme. Briefly describe the tradeoff with respect to: ● The granularity of resource identification. (2 points) ● The granularity of resource description. (3 points) ● The number of hierarchical levels in a taxonomy. (2 points) ● The number of categories at each level in a taxonomy. (3 points)",
+        "section": "3.3, 4.3.1, 5.3, 6.4.1",
+        "tags": "tradeoffs, granularity, taxonomy, resource descriptions",
+        "title": "Tradeoffs in Organizing Systems"
+    },
+    {
+        "question": "Many of the fundamental tradeoffs in organizing systems embody the allocation of costs and benefits between the resource describer/organizer and the user(s). How does this allocation of costs vary in individual, social, and institutional organizing contexts? (3 points)  How does this tradeoff about costs and benefits apply in social tagging contexts? How are costs and benefits allocated in order to encourage participation? (1 point) How does this allocation of costs vary for public sector organizing systems such as those in libraries in contrast to private sector systems such as search engines? How does it work for dominant retailers or manufacturers like Wal-Mart with respect to their suppliers and partners? (4 points) How does this tradeoff shape or constrain the kinds of services and features offered by public libraries and private search engines? (2 points)",
+        "section": "10.3, 10.5, 1.3, 7.1.2, 9.1, 9.2",
+        "tags": "tradeoffs, organizing system contexts",
+        "title": "THE FUNDAMENTAL TRADEOFFS"
+    },
+    {
+        "question": "The great blind jazz musician Roland Kirk was born in Columbus Ohio in 1935. He changed his name to Rahsaan Roland Kirk in 1970 and performed for eight more years under that name before dying of a stroke in 1977. Kirk was an edgy experimentalist, who became famous for employing a circular breathing technique while playing multiple instruments at the same time, including the tenor and alto saxophones, the clarinet, and the flute. ● Based on the information given, create six statements in triple formats about this individual. Don’t focus on the syntax — just keep them simple. (6 points) ● Explain the prerequisites for making these statements useful in a global graph. (4 points)",
+        "section": "5.3, 4.2.2.4, 8.2",
+        "tags": "triples, graphs",
+        "title": "Relations and Structure"
+    },
+    {
+        "question": "“Resource Description Framework” (RDF) statements are sometimes used to describe resources and their relationships to each other. a) RDF repositories are often called “triple stores.” Why? (2 points) b) But not all relationships are “natural” triples. What are the benefits of expressing all relationships as if they were? (2 point) c) What are the downsides of expressing all relationships as triples? (2 points) d) What is one way in which RDF and RDFa differ and what is the implication? (2 points) e) What is one other way in which RDF and RDFa differ and what is the implication? (2 points)",
+        "section": "4.2.2.4, 8.2",
+        "tags": "triples, rdf",
+        "title": "RDF"
+    },
+    {
+        "question": "Suppose we wish to retrieve relevant photos from a collection, relating to some given query. Can you (or how would you) apply the vector space model of information retrieval to this multimedia IR task? ",
+        "section": 9.4,
+        "tags": "vector search, non-text resources, multimedia",
+        "title": "Vector Space Photo Retrieval"
+    },
+    {
+        "question": "In a recent news story published by a well‐known newspaper, a certain online retailer was found to show up as the first result in Google when users searched for designer glasses (for example, “Prada eyewear”). The retailer had been criticized with a large number of online complaints for poor customer service, but the store owner said he gave poor customer service on purpose because Google’s algorithms rewarded him for doing so. If Google only used the Vector Space Model (VSM) to select the set of results to show and rank them, describe in general terms (qualitatively) how Google would process a query that contains the terms “prada” and “eyewear.”(4 points) Now assume that Google uses its PageRank algorithm to rank the results found by the VSM. Describe in general terms (qualitatively) how Google would order those results. (4 points) List TWO NLP techniques that Google might use to prevent websites of bad reputation from showing up as the first results in a search even if they have a high PageRank. Briefly explain how these techniques would address this issue. (2 points)",
+        "section": 9.4,
+        "tags": "vector search, pagerank, search",
+        "title": "Bias in search"
+    },
+    {
+        "question": "A “document type” is an abstract concept that captures the distinctions between documents that make a difference. But we most often use document types after they have been encoded as XML schemas. What is the relationship between a document type and an associated XML schema? Explain why and how this relationship might differ for different kinds of document types and different XML schema languages.",
+        "section": "2.3, 5.5, 4.3, 3.2",
+        "tags": "xml, schemas",
+        "title": "Document Types and XML schemas"
+    }
+]
