@@ -462,6 +462,7 @@ class PageTemplater {
             // Add your templates to this array.
             $this->templates = array(
                 'templates/landing-tdo_resource.php'     => 'TDO Resources Landing Page',
+                'templates/all-resource-index.php'    => 'Resource XML Feed',
             );
         }
 
