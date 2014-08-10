@@ -28,12 +28,12 @@ global $tpl;
 				if ($i != 0) { echo ', '; }
 				$i++;
 				?>
-				<a href="<?php echo get_term_link($the_chapter);  ?>"><?php echo $the_chapter->name; ?></a> [<a target="_blank" href="<?php echo tdo_chapter_link($the_chapter->name);  ?>">read</a>]
+				<a href="<?php echo get_term_link($the_chapter);  ?>"><?php echo $the_chapter->name; ?></a><!-- [<a target="_blank" href="<?php echo tdo_chapter_link($the_chapter->name);  ?>">read</a>] -->
 				<?
 			}
 
 			?>
-	  </h5>
+		</h5>
     </section>
 
 		<section class="content">

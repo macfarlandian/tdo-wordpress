@@ -362,7 +362,7 @@ function tdo_chapter_link($chapter) {
 
 */
     $chapter_parts = explode('.', $chapter);
-    $url = "http://tdo.berkeley.edu/reader/ch";
+    $url = "http://disciplineoforganizing.org/reader/ch";
     for ($i=0; $i < count($chapter_parts); $i++) {
         switch ($i) {
             case 0:
