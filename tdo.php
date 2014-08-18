@@ -463,6 +463,7 @@ class PageTemplater {
             $this->templates = array(
                 'templates/landing-tdo_resource.php'     => 'TDO Resources Landing Page',
                 'templates/all-resource-index.php'    => 'Resource XML Feed',
+                'templates/homepage.php'    => 'Home Landing Page',
             );
         }
 
