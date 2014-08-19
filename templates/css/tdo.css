@@ -1,4 +1,5 @@
-section.content a {
+article section.content a,
+article section.intro a {
   color: #E7B011 !important;
   text-decoration: underline;
 }
