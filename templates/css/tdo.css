@@ -1,7 +1,11 @@
 article section.content a,
 article section.intro a {
-  color: #E7B011 !important;
+  color: #E7B011;
   text-decoration: underline;
+}
+article section.content a.read-more,
+article section.intro a.read-more {
+  color: #005196;
 }
 body.tdo-resources h1,
 body.tdo-resources h2,
@@ -56,10 +60,6 @@ input#chaptersearch {
   margin: 0;
 }
 .metacrap a {
-  text-decoration: underline;
-  color: #005196;
-}
-a.read-more {
   text-decoration: underline;
   color: #005196;
 }
