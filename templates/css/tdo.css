@@ -1,3 +1,7 @@
+section.content a {
+  color: #E7B011 !important;
+  text-decoration: underline;
+}
 body.tdo-resources h1,
 body.tdo-resources h2,
 body.tdo-resources h3,
@@ -72,8 +76,4 @@ a.read-more {
   color: #005196;
   font-size: 34px;
   margin-top: 40px;
-}
-#homepage-landing a {
-  color: #E7B011;
-  text-decoration: underline;
 }
