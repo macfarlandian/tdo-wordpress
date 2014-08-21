@@ -78,3 +78,7 @@ input#chaptersearch {
   font-size: 34px;
   margin-top: 40px;
 }
+#homepage-landing a {
+  color: #E7B011;
+  text-decoration: underline;
+}
